@@ -2,7 +2,7 @@
   width: 100%;
   height: 190px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 250px;
 }
 #elements {
   display: grid;
@@ -43,7 +43,7 @@
 }
 #grid-green > div > ul > li > p,
 #grid-green > div > h3 {
-  color: black;
+  color: white;
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 20px;
 }
@@ -454,5 +454,175 @@ p1 {
   #partner-box-container {
     /* max-width:50%; */
     flex-wrap: wrap;
+  }
+}
+
+#layout {
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 25px;
+
+  grid-template-columns: 150px 190px;
+  grid-template-rows: 150px 150px;
+  grid-template:
+    "MenuBar  MenuBar"
+    "Leftbox  VideoLayout";
+}
+body {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+#MenuLine {
+  width: 100%;
+  height: 3px;
+  background-color: #5a8540;
+}
+
+#MenuBar {
+  width: 100%;
+  min-width: 400px;
+  max-width: 100%;
+  height: 70px;
+  grid-area: MenuBar;
+
+  /* background-color: brown; */
+}
+#Leftbox {
+  width: 100%;
+  height: 500px;
+  min-width: 350px;
+  max-width: 600px;
+  /* background-color: red; */
+  margin-left: 4%;
+  float: left;
+  grid-area: Leftbox;
+}
+#VideoLayout {
+  min-width: 550px;
+  max-width: 100%;
+  height: 500px;
+
+  /* background-color: salmon; */
+  float: left;
+  grid-area: VideoLayout;
+}
+#MenuBar > div:nth-child(1) {
+  width: 25%;
+  height: 70px;
+
+  float: left;
+}
+#MenuBar > div > img:nth-child(1) {
+  height: 32px;
+  margin: 23px 7px 20px 40px;
+
+  float: left;
+}
+.MenuBarh1 {
+  padding-bottom: 10px;
+  float: left;
+}
+.menu > button {
+  float: right;
+  height: 40px;
+  margin: 15px 10px 15px 0px;
+  width: 65px;
+  border: 0px solid whitesmoke;
+}
+.menu > button:nth-child(2) {
+  border: 1px solid rgb(105, 105, 105);
+  width: 90px;
+  border-radius: 5px;
+}
+.menu > button:nth-child(1) {
+  border: 1px solid green;
+  background-color: #5a8540;
+  color: whitesmoke;
+  width: 90px;
+  border-radius: 5px;
+}
+.float_Left {
+  float: left;
+}
+.EamilBox {
+  width: 200px;
+  height: 45px;
+}
+.FreeTrail {
+  border: 1px solid green;
+  background-color: #5fb92a;
+  color: whitesmoke;
+  width: 30%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .MenuBarh1 {
+    padding-bottom: 10px;
+    float: left;
+    color: rgba(255, 0, 0, 0);
+  }
+  #layout {
+    /* background-color: cyan; */
+    grid-template:
+      "MenuBar"
+      "Leftbox"
+      "VideoLayout";
+  }
+}
+@media (max-width: 990px) {
+  .MenuBarh1 {
+    padding-bottom: 10px;
+    float: left;
+    color: rgba(255, 0, 0, 0);
+  }
+  .menu > button {
+    float: right;
+    height: 40px;
+    margin: 10px 1px 10px 0px;
+
+    min-width: 1%;
+    max-width: 9%;
+    border: 0px solid whitesmoke;
+    font-size: 60%;
+  }
+  .EamilBox {
+    width: 0px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
+  }
+  .FreeTrail {
+    border: 1px solid green;
+    background-color: #5fb92a;
+    color: whitesmoke;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  #Leftbox {
+    margin-left: 1%;
+    text-align: center;
+  }
+  #VideoLayout {
+    margin-right: 0%;
+  }
+
+  #layout {
+    grid-template:
+      "MenuBar"
+      "Leftbox"
+      "VideoLayout";
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #layout {
+    grid-template:
+      "MenuBar MenuBar"
+      "Leftbox VideoLayout";
   }
 }
