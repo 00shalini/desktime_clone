@@ -130,11 +130,32 @@
     /* border:  solid teal; */
 }
 
+
+.f79_rev{
+    grid-template: "rev7 rev8 rev9";
+}
+#rev7{
+    grid-area: rev7;
+    /* border: solid magenta; */
+}
+#rev8{
+    grid-area: rev8;
+    /* border: solid tomato; */
+}
+#rev9{
+    grid-area: rev9;
+    /* border:  solid teal; */
+}
+
 .immediate_below{
     margin-top: -2em;
 }
 
 
+
+h3 ~ p{
+    text-align: unset;
+}
 .parent_gap{
     margin-top: 5%;
 }

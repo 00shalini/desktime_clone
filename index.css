@@ -357,13 +357,8 @@ span:hover,
 } */
 
 p {
-<<<<<<< HEAD
-  font-family: "Big Shoulders Display", sans-serif;
-  color: darkgray;
-=======
   font-family: "Big Shoulders Display", cursive;
   color: rgb(111, 111, 111);
->>>>>>> fa2c6a3dd6598c1433366acf425c57509ccfb9c7
   max-width: 100%;
   letter-spacing: 0.5px;
 }
