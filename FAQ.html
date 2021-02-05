@@ -5,151 +5,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
-
-    <style>
-        #faq-container{
-            text-align: center;
-            margin-top: 30px;
-            height: 250px;
-            border: 1px solid red;
-        }
-        p4{
-            color: #404751;
-            font-size: 48px;
-            font-family: "Big Shoulders Display", sans-serif;
-            letter-spacing: 8px;
-        }
-        p5{
-            font-size: 26px;
-            color: #34363a;
-            font-family: "Big Shoulders Display", sans-serif;
-           margin-top: 20px;
-           letter-spacing: 2px;
-          padding-bottom: 10px;
-          
-        }
-        #search-container{
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            /* margin-right: 20px; */
-            
-        }
-       .search-button{
-           width: 100px;
-           height: 30px;
-           background-color: #5fb92a;
-           color: white;
-           margin-left: 10px;
-           border: 1px solid  #5fb92a;
-        }
-        .search-bar{
-            width: 420px;
-        }
-
-        .faq-container{
-            background-color: rgb(161, 69, 69);
-            height: auto;
-            justify-content: center;
-            display: flex;
-            flex-wrap: wrap;
-            /* margin-top: 20px; */
-        }
-        .faq-box{
-            width: 600px;
-            height: 270px;
-            background-color: white;
-            margin: 30px 20px;
-            border-radius: 5px;
-        }
-
-        #faq-cont-1{
-            display: flex;
-            width: 1100px;
-            margin-top: 30px;
-            justify-content: center;
-            height: 320px;
-            border: 1px solid black;
-        }
-
-        #faq-cont-2{
-            display: flex;
-            width: 1100px;
-            
-            /* justify-content: center; */
-            height: 320px;
-            border: 1px solid black;
-        }
-
-        #faq-cont-3{
-            display: flex;
-            width: 1100px;
-            
-            /* justify-content: center; */
-            height: 320px;
-            border: 1px solid black;
-        }
-
-        #faq-cont-4{
-            display: flex;
-            width: 1100px;
-            
-            /* justify-content: center; */
-            height: 320px;
-            border: 1px solid black;
-        }
-
-
-        #faq-cont-5{
-            display: flex;
-            width: 1100px;
-            
-            /* justify-content: center; */
-            height: 320px;
-            border: 1px solid black;
-        }
-
-
-        h4{
-            font-size: 24px;
-            color: #31363d;
-            margin-left: 50px;
-            
-        }
-        .list-green{
-            letter-spacing: 1px;
-            color: #5fb92a;
-            font-size: 25px;
-            list-style: none;
-            
-           
-        }
-
-        .list-green > li:hover{
-
-            text-decoration: underline;
-            cursor: pointer;
-            
-        }
-
-        .list-green > li:before{
-            content: "\2713";
-            padding-bottom: 15px;
-          
-            }
-
-        #faq-box-button{
-            width: 120px;
-           height: 40px;
-           background-color: #5fb92a;
-           color: white;
-           margin-left: 45px;
-           font-size: 18px;
-           border: 1px solid  #5fb92a;
-        }
-            
-     
-    </style>
    
 </head>
 <body>
@@ -158,15 +13,18 @@
     <div id = "layout">
         <div id = "MenuBar">
             <div>
-                <img src = "https://desktime.com/assets/img/logo/default.svg">
-                
+                <a href="index.html">
+                    <img src = "https://desktime.com/assets/img/logo/default.svg">
+                </a>
             </div>
             <div class = "menu">
-                
                 <button>SIGN UP</button>
                 <button>LOGIN</button>
-                <button>Blog</button>
-                <button>FAQ</button>
+                
+                
+                <button  onclick="location.href = 'blog.html';">Blog</button>
+                
+                <button  onclick="location.href = 'FAQ.html';">FAQ</button>
                 <button>About us</button>
                 <button>Pricing</button>
                 <button>Features</button>
@@ -179,11 +37,11 @@
     
 <div id="faq-container">
 
-    <p4>Frequently Asked Questions</p4>
+    <h4>Frequently Asked Questions</h4>
     <br>
     <br>
     <br>
-    <p5>Here you can find all the questions you need answered</p5>
+    <h5>Here you can find all the questions you need answered</h5>
 
 
     
@@ -383,77 +241,141 @@
 
 
 
+
 <div id="footer">
     <div id="footer-list">
-        <div id="desktime">
-            <ul>
-                <li>Desktime</li>
-                <li>Terms</li>
-                <li>Privacy</li>
-                <li>Cookies</li>
-                <li>Affiliate Terms</li>
-                <li>Download app</li>
-                <li>Pricing</li>
-                <li>Affiliate</li>
-                <li>Press</li>
-                <li>Desktime in your language</li>
-            </ul>
+        <div id="desktime" >
+            <nav>
+                <ul>
+                    <li>Desktime</li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Cookies</li>
+                    <li>Affiliate Terms</li>
+                    <li>Download app</li>
+                    <li>Pricing</li>
+                    <li>Affiliate</li>
+                    <li>Press</li>
+                    <li>Desktime in your language</li>
+                </ul>
+                <select>
+                    <option value="" selected="selected">Desktime</option>
+                    <option value="#Terms">Terms</option>
+                    <option value="#Privacy">Privacy</option>
+                    <option value="#Cookies">Cookies</option>
+                    <option value="#Affiliate Terms">Affiliate Terms</option> 
+                    <option value="#Download app">Download app</option>
+                    <option value="#Pricing">Pricing</option>
+                    <option value="#Affiliate">Affiliate</option>
+                    <option value="#Press">Press</option>
+                    <option value="#Desktime in your language">Desktime in your language</option>
+                </select>
+            </nav>
         </div>
         <div id="Learn-more">
-            <ul>
-                <li>Learn More</li>
-                <li>Employee Time Tracking</li>
-                <li>Online employee time clock</li>
-                <li>Best time tracking apps</li>
-                <li>Desktime for business</li>
-                <li>Desktime for Freelancers</li>
-                <li>FAQ</li>
-                <li>Case studies</li>
-                <li>Webinar</li>
-                <li>Blog</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>Learn More</li>
+                    <li>Employee Time Tracking</li>
+                    <li>Online employee time clock</li>
+                    <li>Best time tracking apps</li>
+                    <li>Desktime for business</li>
+                    <li>Desktime for Freelancers</li>
+                    <li>FAQ</li>
+                    <li>Case studies</li>
+                    <li>Webinar</li>
+                    <li>Blog</li>
+                </ul>
+                <select>
+                    <option value="" selected="selected">Learn More</option>
+                    <option value="#Employee Time Tracking">Employee Time Tracking</option>
+                    <option value="#Online employee time clock">Online employee time clock</option>
+                    <option value="#Best time tracking apps">Best time tracking apps</option>
+                    <option value="#Desktime for business">Desktime for business</option> 
+                    <option value="#Desktime for Freelancers">Desktime for Freelancers</option>
+                    <option value="#FAQ">FAQ</option>
+                    <option value="#Case studies">Case studies</option>
+                    <option value="#Webinar">Webinar</option>
+                    <option value="#Blog">Blog</option>
+                </select>
+            </nav>
         </div>
         <div id="Integrations">
-            <ul>
-                <li>Integrations</li>
-                <li>Trello</li>
-                <li>Basecamp</li>
-                <li>Jira</li>
-                <li>Asana</li>
-                <li>Outlook Calender</li>
-                <li>Google Calender</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>Integrations</li>
+                    <li>Trello</li>
+                    <li>Basecamp</li>
+                    <li>Jira</li>
+                    <li>Asana</li>
+                    <li>Outlook Calender</li>
+                    <li>Google Calender</li>
+                </ul>
+                <select>
+                    <option value="" selected="selected">Integrations</option>
+                    <option value="#Trello">Trello</option>
+                    <option value="#Basecamp">Basecamp</option>
+                    <option value="#Jira">Jira</option>
+                    <option value="#Asana">Asana</option> 
+                    <option value="#Outlook Calender">Outlook Calender</option>
+                    <option value="#Google Calende">Google Calende</option>
+                </select>
+            </nav>
         </div>
         <div id="features">
-            <ul>
-                <li>Features</li>
-                <li>Automatic time tracking</li>
-                <li>URL & app tracking</li>
-                <li>Screenshots</li>
-                <li>Project time tracking</li>
-                <li>Shift Scheduling</li>
-                <li>Offline time tracking</li>
-                <li>Invoicing</li>
-                <li>Absence Calender</li>
-                <li>Mobile app</li>
-                <li>Feature requests</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>Features</li>
+                    <li>Automatic time tracking</li>
+                    <li>URL & app tracking</li>
+                    <li>Screenshots</li>
+                    <li>Project time tracking</li>
+                    <li>Shift Scheduling</li>
+                    <li>Offline time tracking</li>
+                    <li>Invoicing</li>
+                    <li>Absence Calender</li>
+                    <li>Mobile app</li>
+                    <li>Feature requests</li>
+                </ul>
+                <select>
+                    <option value="" selected="selected">Features</option>
+                    <option value="#Automatic time tracking">Automatic time tracking</option>
+                    <option value="URL & app tracking">URL & app tracking</option>
+                    <option value="Screenshots">Screenshots</option>
+                    <option value="#Project time tracking">Project time tracking</option> 
+                    <option value="#Shift Scheduling">Shift Scheduling</option>
+                    <option value="#Offline time tracking">Offline time tracking</option>
+                    <option value="#Invoicing">Invoicing</option>
+                    <option value="#Absence Calender">Absence Calender</option>
+                    <option value="#Mobile app">Mobile app</option>
+                </select>
+            </nav>
         </div>
         <div id="Contacts">
-            <ul>
-                <li>Contacts</li>
-                <li>Schedule a demo</li>
-                <li>Schedule a support call</li>
-                <li>Send us an e-mail</li>
-                <li>Request In-person training</li>
-                <li>Open chat</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>Contacts</li>
+                    <li>Schedule a demo</li>
+                    <li>Schedule a support call</li>
+                    <li>Send us an e-mail</li>
+                    <li>Request In-person training</li>
+                    <li>Open chat</li>
+                </ul>
+                <select>
+                    <option value="" selected="selected">Contacts</option>
+                    <option value="#Schedule a demo">Schedule a demo</option>
+                    <option value="#Schedule a support call">Schedule a support call</option>
+                    <option value="Send us an e-mail">Send us an e-mail</option>
+                    <option value="#Request In-person training">Request In-person training</option> 
+                    <option value="#Open chat">Open chat</option>
+                </select>
+            </nav>
         </div>
     </div>
     <div id="copy">
         <div id="d-logo">
-            <a href="C:\Users\shalini07061997\desktime_clone\index.html"></a>
-            <img src="https://desktime.com/assets/img/logo/default.svg" alt="desktime logo"/>
+            <a href="index.html">
+            <img src="https://desktime.com/assets/img/logo/default.svg" alt="desktime logo"/></a>
         </div>
         <div id="copy-blank"></div>
         <div id="fb-l">
@@ -492,8 +414,6 @@
         </div>
     </div>
 </div>
-
-    
     
     
     
