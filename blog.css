@@ -3,6 +3,14 @@
 } */
 
 
+
+.pointer3:hover {
+  /* color: green !important; */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
 #fix_pos{
   /* border: solid red; */
   width: 3%;
