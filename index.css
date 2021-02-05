@@ -1,3 +1,7 @@
+.immediate_below{
+  margin-top: -0.5em !important;
+}
+
 #index_part2 {
   width: 100%;
   height: 190px;
@@ -357,13 +361,8 @@ span:hover,
 } */
 
 p {
-<<<<<<< HEAD
-  font-family: "Big Shoulders Display", sans-serif;
-  color: darkgray;
-=======
   font-family: "Big Shoulders Display", cursive;
   color: rgb(111, 111, 111);
->>>>>>> fa2c6a3dd6598c1433366acf425c57509ccfb9c7
   max-width: 100%;
   letter-spacing: 0.5px;
 }
@@ -381,6 +380,9 @@ h2 {
 
 .max_width_100 {
   max-width: 100%;
+}
+.max_width_30{
+  max-width: 30%
 }
 
 .little_margin_top {
@@ -482,6 +484,10 @@ h2 {
 
 .center_align {
   text-align: center;
+}
+
+.align_unset{
+  text-align: unset;
 }
 
 .decrease_width {
@@ -692,7 +698,7 @@ body {
 
 #MenuLine {
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #5a8540;
 }
 
@@ -763,7 +769,7 @@ body {
   float: left;
 }
 .EamilBox {
-  width: 200px;
+  width: 60%;
   height: 45px;
 }
 .FreeTrail {
@@ -811,19 +817,17 @@ body {
     }
 
     .EamilBox {
-      width: 0px;
-      height: 0px;
       background-color: rgba(0, 0, 0, 0);
       border: 0px solid rgba(0, 0, 0, 0);
     }
     .FreeTrail {
-      border: 1px solid green;
+      /* border: 1px solid green;
       background-color: #5fb92a;
-      color: whitesmoke;
+      color: whitesmoke; */
       width: 80%;
-      height: 50px;
-      border-radius: 5px;
-      font-size: 15px;
+      /* height: 50px;
+      border-radius: 5px; */
+      font-size: 30px;
     }
     #Leftbox {
       margin-left: 1%;
