@@ -1,3 +1,7 @@
+.immediate_below{
+  margin-top: -0.5em !important;
+}
+
 #index_part2 {
   width: 100%;
   height: 190px;
@@ -445,7 +449,6 @@ span:hover,
 
 p {
   font-family: "Big Shoulders Display", sans-serif;
-  color: darkgray;
   color: rgb(111, 111, 111);
   max-width: 100%;
   letter-spacing: 0.5px;
@@ -464,6 +467,9 @@ h2 {
 
 .max_width_100 {
   max-width: 100%;
+}
+.max_width_30{
+  max-width: 30%
 }
 
 .little_margin_top {
@@ -564,6 +570,10 @@ h2 {
 
 .center_align {
   text-align: center;
+}
+
+.align_unset{
+  text-align: unset;
 }
 
 .decrease_width {
@@ -774,7 +784,7 @@ body {
 
 #MenuLine {
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #5a8540;
 }
 
@@ -845,7 +855,7 @@ body {
   float: left;
 }
 .EamilBox {
-  width: 200px;
+  width: 60%;
   height: 45px;
 }
 .FreeTrail {
@@ -890,7 +900,6 @@ body {
     border: 0px solid whitesmoke;
     font-size: 60%;
   }
-
   .EamilBox {
     width: 0px;
     height: 0px;
@@ -913,7 +922,16 @@ body {
   #VideoLayout {
     margin-right: 0%;
   }
-
+    .FreeTrail {
+      /* border: 1px solid green;
+      background-color: #5fb92a;
+      color: whitesmoke; */
+      width: 80%;
+      /* height: 50px;
+      border-radius: 5px; */
+      font-size: 30px;
+    }
+ 
   #layout {
     grid-template:
       "MenuBar"
