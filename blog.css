@@ -1,7 +1,7 @@
-/* .see_border{
+.see_border{
     margin: 2px 3px;
     border: solid magenta;
-} */
+}
 
 .blog_width {
     width: 70%;
@@ -228,6 +228,9 @@ body{
     max-width: 100%!important;
 }
 
+.white_border{
+    border: solid white 1px;
+}
 
 
 
@@ -258,7 +261,15 @@ body{
         /* font-size: 0em; */
     }
     
+    .block1{
+        grid-template: "description"
+                        "subscription";
+    }
 
+
+    .white_border{
+        border: solid white 1px;
+    }
     #main_img{
         max-width: 80%;
         height: auto;
@@ -296,6 +307,24 @@ body{
                         "rev8"
                         "rev9";
     }
+    .EamilBox{
+        color: white;
+    }
+    #subscription{
+        max-width: 80%;
+    }
+
+    #description_sub{
+        max-width: 80%;
+    }
+
+    #block1{
+        margin-top: 15%;
+    }
+    #sub_button{
+        border: solid red;
+        /* margin-top: 10%; */
+        margin-top: 10%;
 
 }
 @media (max-width: 600px) {
