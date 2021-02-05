@@ -50,6 +50,7 @@
 #grid-green > div > ul > li > p {
   font-size: 20px;
   letter-spacing: 0.3px;
+  text-align: left;
 }
 #grid-green > div > h3 {
   letter-spacing: 1px;
@@ -58,6 +59,136 @@
 .check {
   list-style-image: url(https://desktime.com/assets/img/icons/bullet-point-check_white.svg);
 }
+#tracking {
+  width: 100%;
+}
+#tracking-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 315px 315px 315px;
+  grid-template-rows: 430px 430px 430px;
+  gap: 6%;
+}
+#tracking-list > div > img {
+  width: 90%;
+  height: 50%;
+}
+#tracking > h3,
+p,
+p,
+#tracking-list > div > h4,
+p {
+  text-align: center;
+}
+#tracking > p,
+p {
+  color: rgb(84, 84, 84);
+}
+#tracking > p:nth-child(3) {
+  margin-top: -25px;
+}
+#tracking-list > div > h4 {
+  font-size: 23px;
+  font-weight: none;
+  color: rgb(78, 75, 75);
+}
+#tracking-list > div > p:nth-child(3) {
+  font-size: 20px;
+  color: rgb(120, 119, 119);
+}
+#tracking-list > div > p:nth-child(4) {
+  margin-top: -30px;
+  color: #5fb92a;
+}
+#feature-t > button {
+  background-color: #5fb92a;
+  height: 50px;
+  width: 190px;
+  margin-left: 450px;
+  border: 1px solid #5fb92a;
+  border-radius: 3px;
+  color: white;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 22px;
+}
+
+#footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 350px;
+}
+#footer-list {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 240px 240px 240px 240px 240px;
+  grid-template-rows: 500px;
+  margin: auto;
+  gap: 0.5%;
+}
+#footer-list > div > ul > li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: rgb(86, 83, 83);
+}
+#footer-list > div > ul > li:hover {
+  color: #5fb92a;
+  cursor: pointer;
+}
+#footer-list > div > ul > li:nth-child(1) {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+}
+#copy {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 200px 500px 50px 50px 50px 50px 130px 130px;
+  grid-template-rows: 100px;
+  gap: 0.3%;
+  margin: auto;
+  margin-top: -145px;
+}
+#d-logo {
+  margin-left: 40px;
+  cursor: pointer;
+}
+#fb-l > a > img,
+#twitter-l > a > img,
+#linkedin-l > a > img {
+  width: 30px;
+}
+#youtube-l > a > img {
+  width: 70px;
+  margin-left: -20px;
+}
+#google-play > a > img,
+#app-store > a > img {
+  width: 120px;
+  margin-left: 10px;
+}
+#google-play > a > img {
+  margin-top: -40px;
+}
+#copy-2 {
+  width: 100%;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 435px 730px 20px;
+  grid-template-rows: 70px;
+  margin: auto;
+}
+#copyright > p {
+  font-size: 20px;
+  text-align: right;
+  color: darkgray;
+}
+#dra-group > img {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 /* Large devices exact width :900px) */
 @media only screen and (max-width: 900px) {
   #elements {
@@ -82,8 +213,50 @@
   #green-cont {
     height: 1020px;
   }
-}
+  #tracking-list {
+    grid-template:
+      "time-t url-t"
+      "doc-t idle-t"
+      "project-t auto-t"
+      "cal-t shift-t"
+      "invoice-t invoice-t"
+      "feature-t feature-t";
+    grid-template-columns: 315px 315px;
+  }
 
+  #feature-t {
+    margin-left: -450px;
+    margin-top: 550px;
+  }
+  #footer-list {
+    grid-template:
+      "desktime Learn-more Integrations"
+      "features Contacts";
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 330px 330px;
+  }
+  #footer {
+    margin-top: 650px;
+  }
+  #copy {
+    margin-top: 50px;
+    grid-template:
+      "d-logo"
+      "fb-l twitter-l youtube-l linkedin-l google-play app-store";
+    grid-template-columns: 50px 50px 50px 50px 130px 130px;
+    grid-template-rows: 70px 100px;
+    margin-left: 200px;
+  }
+  #copy-2 {
+    grid-template: "copyright dra-group";
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 100px;
+  }
+  #d-logo {
+    grid-column-start: 3;
+    grid-column-end: 6;
+  }
+}
 /* Small devices with exact 600px */
 @media only screen and (max-width: 600px) {
   #elements > div {
@@ -108,6 +281,33 @@
   }
   #green-cont {
     height: 1020px;
+  }
+  #tracking-list {
+    grid-template:
+      "time-t"
+      "url-t"
+      "doc-t"
+      "idle-t"
+      "project-t"
+      "auto-t"
+      "cal-t"
+      "shift-t"
+      "invoice-t"
+      "feature-t";
+    grid-template-rows:
+      280px
+      280px
+      280px
+      280px
+      280px
+      280px
+      280px
+      280px
+      280px;
+  }
+  #feature-t {
+    margin-left: -170px;
+    margin-top: -100px;
   }
 }
 
@@ -157,15 +357,22 @@ span:hover,
 } */
 
 p {
-  font-family: "Big Shoulders Display", cursive;
+<<<<<<< HEAD
+  font-family: "Big Shoulders Display", sans-serif;
   color: darkgray;
+=======
+  font-family: "Big Shoulders Display", cursive;
+  color: rgb(111, 111, 111);
+>>>>>>> fa2c6a3dd6598c1433366acf425c57509ccfb9c7
   max-width: 100%;
+  letter-spacing: 0.5px;
 }
 
 h2 {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   color: black;
   max-width: 100%;
+  letter-spacing: 0.5px;
 }
 
 .max_width_80 {
@@ -188,7 +395,7 @@ h2 {
 .div_strikes {
   width: 70%;
   height: 3px;
-  background: darkgray;
+  background: rgb(111, 111, 111);
   margin: auto;
   margin-bottom: 20%;
   border-radius: 10px;
@@ -200,7 +407,7 @@ h2 {
 }
 
 .template_column1 {
-  /* grid-template-columns: auto auto auto auto auto; */
+
   grid-template: "team business enterprise agency freelance";
   text-align: center;
 }
@@ -343,16 +550,18 @@ h2 {
 }
 
 h3 {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   font-size: 36px;
   color: rgb(53, 55, 58);
+  letter-spacing: 0.5px;
 }
 
 p {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   font-size: 24px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 #hour-container {
@@ -379,13 +588,16 @@ p {
 
 h2 {
   font-size: 36px;
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   margin-top: 50px;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
 h1 {
   font-size: 76px;
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 #map-box {
@@ -407,9 +619,13 @@ h1 {
 }
 
 p1 {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
   font-size: 24px;
+  letter-spacing: 0.5px;
   /* padding-bottom: 10px; */
+}
+#partner-box > div:nth-child(1) > h2 {
+  color: white;
 }
 
 .partner-box-lower {
@@ -470,7 +686,8 @@ p1 {
     "Leftbox  VideoLayout";
 }
 body {
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Big Shoulders Display", sans-serif;
+  letter-spacing: 1.5px;
 }
 
 #MenuLine {
@@ -573,52 +790,58 @@ body {
       "VideoLayout";
   }
 }
+
+
 @media (max-width: 990px) {
-  .MenuBarh1 {
-    padding-bottom: 10px;
-    float: left;
-    color: rgba(255, 0, 0, 0);
-  }
-  .menu > button {
-    float: right;
-    height: 40px;
-    margin: 10px 1px 10px 0px;
+    .MenuBarh1 {
+      padding-bottom: 10px;
+      float: left;
+      color: rgba(255, 0, 0, 0);
+    }
 
-    min-width: 1%;
-    max-width: 9%;
-    border: 0px solid whitesmoke;
-    font-size: 60%;
-  }
-  .EamilBox {
-    width: 0px;
-    height: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px solid rgba(0, 0, 0, 0);
-  }
-  .FreeTrail {
-    border: 1px solid green;
-    background-color: #5fb92a;
-    color: whitesmoke;
-    width: 80%;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 15px;
-  }
-  #Leftbox {
-    margin-left: 1%;
-    text-align: center;
-  }
-  #VideoLayout {
-    margin-right: 0%;
-  }
+    .menu > button {
+      float: right;
+      height: 40px;
+      margin: 10px 1px 10px 0px;
 
-  #layout {
-    grid-template:
-      "MenuBar"
-      "Leftbox"
-      "VideoLayout";
-  }
+      min-width: 1%;
+      max-width: 9%;
+      border: 0px solid whitesmoke;
+      font-size: 60%;
+    }
+
+    .EamilBox {
+      width: 0px;
+      height: 0px;
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px solid rgba(0, 0, 0, 0);
+    }
+    .FreeTrail {
+      border: 1px solid green;
+      background-color: #5fb92a;
+      color: whitesmoke;
+      width: 80%;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+    #Leftbox {
+      margin-left: 1%;
+      text-align: center;
+    }
+    #VideoLayout {
+      margin-right: 0%;
+    }
+
+    #layout {
+      grid-template:
+        "MenuBar"
+        "Leftbox"
+        "VideoLayout";
+    }
 }
+
+
 @media only screen and (min-width: 1200px) {
   #layout {
     grid-template:

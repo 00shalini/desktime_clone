@@ -48,40 +48,77 @@
 
         .faq-container{
             background-color: rgb(161, 69, 69);
-            height: 1000px;
+            height: auto;
             justify-content: center;
             display: flex;
+            flex-wrap: wrap;
+            /* margin-top: 20px; */
         }
         .faq-box{
-            width: 500px;
-            height: 200px;
+            width: 600px;
+            height: 270px;
             background-color: white;
             margin: 30px 20px;
             border-radius: 5px;
         }
 
-        #faq-cont{
+        #faq-cont-1{
             display: flex;
+            width: 1100px;
+            margin-top: 30px;
+            justify-content: center;
+            height: 320px;
+            border: 1px solid black;
+        }
+
+        #faq-cont-2{
+            display: flex;
+            width: 1100px;
+            
+            /* justify-content: center; */
+            height: 320px;
+            border: 1px solid black;
+        }
+
+        #faq-cont-3{
+            display: flex;
+            width: 1100px;
+            
+            /* justify-content: center; */
+            height: 320px;
+            border: 1px solid black;
         }
 
 
         h4{
             font-size: 24px;
             color: #31363d;
-            padding-left: 20px
+            margin-left: 50px;
             
         }
         .list-green{
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             color: #5fb92a;
-            font-size: 20px;
+            font-size: 25px;
             list-style: none;
+            
+           
         }
 
         li:before{
             content: "\2713";
-            
+            padding-bottom: 15px;
+          
             }
+
+        #faq-box-button{
+            width: 120px;
+           height: 40px;
+           background-color: #5fb92a;
+           color: white;
+           margin-left: 45px;
+           font-size: 18px;
+        }
             
      
     </style>
@@ -134,33 +171,115 @@
 
 <div class="faq-container">
 
-    <div id="faq-cont">
+    <div id="faq-cont-1">
 
-    <div class="faq-box">
-        <h4>Getting Started</h4>
-        <ul class="list-green">
-            <li>How to create a shift</li>
-            <li>How to edit or delete a shift?</li>
-            <li>How to approve shift requests?</li>
-        </ul>
+        <div class="faq-box">
+
+                <h4>Getting Started</h4>
+                    <ul class="list-green">
+                        <li>How to create a shift</li>
+                        <li>How to edit or delete a shift?</li>
+                        <li>How to approve shift requests?</li>
+                    </ul>
+
+                <button id="faq-box-button">view all 19</button>
         
 
+        </div>
+
+
+
+        <div class="faq-box">
+
+            <h4>General</h4>
+            <ul class="list-green">
+                <li>How does the application work?</li>
+                <li>How can I log offline time?</li>
+                <li>How does the mobile app work?</li>
+            </ul>
+
+            <button id="faq-box-button">view all 23</button>
+
+        </div>
+
     </div>
-    <div class="faq-box"></div>
-
-</div>
 
 
 
+    <div id="faq-cont-2">
 
-    <!-- <div class="faq-box"></div>
-    <div class="faq-box"></div>
-    <div class="faq-box"></div>
-    <div class="faq-box"></div>
-    <div class="faq-box"></div>
-    <div class="faq-box"></div>
-    <div class="faq-box"></div>
-    <div class="faq-box"></div> -->
+        <div class="faq-box">
+
+                <h4>Settings and Accounts</h4>
+                    <ul class="list-green">
+                        <li>How to change setting for a specific employee?</li>
+                        <li>How can I change the status of an application?</li>
+                        <li>How to enable screen capture?</li>
+                    </ul>
+
+                <button id="faq-box-button">view all 24</button>
+        
+
+        </div>
+
+
+
+        <div class="faq-box">
+
+            <h4>Projects</h4>
+            <ul class="list-green">
+                <li>What is "Projects" section?</li>
+                <li>How to create a project?</li>
+                <li>How to start tracking a project?</li>
+            </ul>
+
+            <button id="faq-box-button">view all 23</button>
+
+        </div>
+
+    </div>
+
+
+    <div id="faq-cont-3">
+
+        <div class="faq-box">
+
+                <h4>Reports</h4>
+                    <ul class="list-green">
+                        <li>What is reports section?</li>
+                        <li>How to setup email reports?</li>
+                       <li>How to m?</li>
+                           
+                    </ul>
+
+                <button id="faq-box-button">view all 3</button>
+        
+
+        </div>
+
+
+
+        <div class="faq-box">
+
+            <h4>Exports</h4>
+            <ul class="list-green">
+                <li>How to generate an export?</li>
+                <li>What data does each export show?</li>
+                <li>Who can create an exports?</li>
+            </ul>
+
+            <button id="faq-box-button">view all 4</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    
 
 </div>
     
