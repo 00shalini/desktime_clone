@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id = "MenuLine"></div>
+    <div id = "MenuLine" class="immediate_below"></div>
     <div id = "layout">
         <div id = "MenuBar">
             <div>
@@ -25,9 +25,9 @@
                 <button>LOGIN</button>
                 
                 
-                <button><a href="blog.html">Blog</a></button>
+                <button  onclick="location.href = 'blog.html';">Blog</button>
                 
-                <button><a href="FAQ.html">FAQ</a></button>
+                <button  onclick="location.href = 'FAQ.html';">FAQ</button>
                 <button>About us</button>
                 <button>Pricing</button>
                 <button>Features</button>
@@ -56,14 +56,14 @@
             <div>
                 <label for ="email"></label>
                 <input class= "EamilBox" type= "email" placeholder="Your Work email" >
-                <button class="FreeTrail">Start Free Trial</button>
+                <button class="FreeTrail little_left_margin">Start Free Trial</button>
             </div>
             <div>
-                <h4>Try free for 14 days. No credit card required.</h4>
-                <div>
-                    <p>By signing up, you agree to our terms and privacy policy.
+                <p class="small_size align_unset no_margin_top">Try free for 14 days. No credit card required.</p>
+                <!-- <div class="little_margin_top"> -->
+                <p class="align_unset no_margin_top">By signing up, you agree to our terms and privacy policy.</p>
                         
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         <div id = "VideoLayout">
@@ -464,6 +464,19 @@
                 <button>See All Features</button>
             </div>
         </div>
+    </div>
+ 
+    <div id="trial-form">
+         <div id="trial">
+             <h2 id="ready">Ready for your free trial?</h2>
+             <form>
+                 <input type="text" placeholder="Your work email" id="email" name="Email"/>
+                 <a href="signup.html">
+                 <button id="start">Get Started</button></a>
+             </form>
+             <p id="cc">Try free for 14 days. No credit card required.</p>
+             <p id="terms">By signing up, you agree to our <span>terms</span>and<span>privacy policy.</span></p>
+         </div>
     </div>
 
     <div id="footer">
