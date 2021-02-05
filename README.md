@@ -1,6 +1,6 @@
 ## desktime_clone
 
-One simple website cloning
+DeskTime web-app cloning
 ### Created by
 Wardha group Samurai_2 batch from Masai School have created this project.
 Team Members are....
