@@ -1,3 +1,6 @@
+
+
+
 .immediate_below {
   margin-top: -0.5em !important;
 }
@@ -497,6 +500,8 @@ form {
   #trial-form > div > form > input {
     width: 390px;
   }
+
+  
 }
 
 #third_part {
@@ -525,9 +530,10 @@ span,
   cursor: pointer;
 }
 
+
 span:hover,
 .pointer2:hover {
-  color: green;
+  color: green !important;
   cursor: pointer;
   text-decoration: underline;
 }
