@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">  
-        <title>Blogs</title>
+        <title>Productivity tips, news and insights | DeskTime Blog</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="blog.css">
         <link rel="stylesheet" type="text/css" href="MenuBar.css">
@@ -15,32 +15,43 @@
 
 
     <body>
+            <div id = "MenuLine"></div>
+            <div class="MenuBarToggle">
+                <a href="index.html">
+                <img class = "SvgLogo" src = "https://desktime.com/assets/img/logo/default.svg"></a>
+                <label id = "Menulabel" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div class="menuBar">
+                    <a href="#">Demo</a>
+                    <a href="#">Features</a>
+                    <a href="#">About us</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="login.html"><button id = "LogInButton" class="pointer1">LOGIN</button></a>
+                    <a href="signUP.html"><span><button id = "SignButton" class="pointer1">SIGN UP</button></span></a>
+                </div>
+            </div>
 
-        <div id = "MenuLine"></div>
-    <div class="MenuBarToggle">
-        <a href="index.html">
-        <img class = "SvgLogo" src = "https://desktime.com/assets/img/logo/default.svg"></a>
-        <label id = "Menulabel" for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menuBar">
-            <a href="#">Demo</a>
-            <a href="#">Features</a>
-            <a href="#">About us</a>
-            <a href="FAQ.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-            <a href="login.html"><button id = "LogInButton">LOGIN</button></a>
-            <a href="signUP.html"><span><button id = "SignButton">SIGN UP</button></span></a>
+        <div id = "MenuEnd"></div>
+        
+
+        <div id="fix_pos">
+            <img class="pointer1" src = "https://seeklogo.com/images/F/facebook-logo-C9DDA9B496-seeklogo.com.png">
+            <br>
+            <img class="pointer1" src  = "https://thesustainableangle.org/wp-content/uploads/2015/01/Stunning-Instagram-Logo-Vector-Free-Download-43-For-New-Logo-with-Instagram-Logo-Vector-Free-Download-1-1024x1024.png">
+            <br>
+            <img class="pointer1" src  = "https://seeklogo.com/images/T/twitter-2012-positive-logo-916EDF1309-seeklogo.com.png">
+            <br>
+            <img class="pointer1" src  = "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512.png">
         </div>
-    </div>
 
-<div id = "MenuEnd"></div>
         
         <div>
             <div class="center_align">
                 <h2 class="color_black">DeskTime blog</h2>
                 <p>The hottest topics on workplace productivity. Don’t miss the latest trends, case studies, and news.</p>
-                <input type="text" placeholder="Search in the blog....">
-                <button>Search</button>
+                <input type="text" placeholder="Search in the blog...." id="search_top">
+                <button id="search_button">Search</button>
             </div>
 
             <div class="center_align">
