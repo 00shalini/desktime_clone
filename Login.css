@@ -122,7 +122,8 @@ transform: translate(10%);
 
 
 #LogInMain{
-    width: 550px;
+    max-width: 550px;
+    min-width: 200px;
     height:780px ;
     float:auto;
     margin: auto;
@@ -142,8 +143,8 @@ transform: translate(10%);
 
 }
     #LoginHere{
-    width: 400px;
-    height: 350px;
+        width: 72%;
+    height: 370px;
     border: 0px solid gray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.122), 0 6px 20px 0 rgba(0, 0, 0, 0.136);
     text-align: center;
@@ -152,7 +153,7 @@ transform: translate(10%);
     padding-top: 10px;
 } #LoginHere>input{
     height: 50px;
-    width: 370px;
+    width: 90%;
     text-align: left;
     margin: 10px;
     padding-left: 10px;
@@ -161,7 +162,7 @@ transform: translate(10%);
    border-radius: 4px;
 }#LoginHere>button{
     height: 50px;
-    width: 370px;
+    width: 90%;
     text-align: center;
     margin: 10px;
     background-color: #5FB92A;
@@ -214,4 +215,270 @@ transform: translate(10%);
 }
 #ConnectWith>div>div:nth-child(4){
     background-image: url(https://desktime.com/assets/img/icons/google_v2.svg);
+}#loginH1font{
+    font-size: 30px;
+    color: gray;
+}#ForgetpassFont{
+    font-size: 15px;
+    color: gray;
+}#loginFont{
+    font-size: 15px;
+    color: gray;
 }
+
+
+
+/* footer start */
+
+
+#footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 35px;
+  }
+  #footer-list {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    grid-template-rows: 500px;
+    margin: auto;
+    gap: 0.5%;
+  }
+  #footer-list > div > ul > li {
+    list-style: none;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: rgb(86, 83, 83);
+  }
+  #footer-list > div > ul > li:hover {
+    color: #5fb92a;
+    cursor: pointer;
+  }
+  #footer-list > div > ul > li:nth-child(1) {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+  }
+  #copy {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 200px 500px 50px 50px 50px 50px 130px 130px;
+    grid-template-rows: 100px;
+    gap: 0.3%;
+    margin: auto;
+    margin-top: -145px;
+  }
+  #d-logo {
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  #fb-l > a > img,
+  #twitter-l > a > img,
+  #linkedin-l > a > img {
+    width: 30px;
+  }
+  #youtube-l > a > img {
+    width: 70px;
+    margin-left: -20px;
+  }
+  #google-play > a > img,
+  #app-store > a > img {
+    width: 120px;
+    margin-left: 10px;
+  }
+  #google-play > a > img {
+    margin-top: -40px;
+  }
+  #copy-2 {
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 435px 730px 20px;
+    grid-template-rows: 70px;
+    margin: auto;
+  }
+  #copyright > p {
+    font-size: 20px;
+    text-align: right;
+    color: darkgray;
+  }
+  #dra-group > img {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  /* Large devices exact width :900px) */
+  @media only screen and (max-width: 900px) {
+   /* signup  */
+    #SignUPHere{
+
+        margin-top: 100px;
+    }
+
+    /* signUp */
+    #elements {
+      grid-template:
+        "auto-time screenshots url-app-track "
+        "doc-track project-track cost-cal";
+      margin-bottom: 10px;
+      padding-bottom: 60px;
+    }
+    #elements > div {
+      margin-left: 40px;
+    }
+    #elements > div > p {
+      margin-left: -110px;
+    }
+    #grid-green {
+      grid-template:
+        "boost"
+        "mini"
+        "organize";
+    }
+    #green-cont {
+      height: 1020px;
+    }
+    #tracking-list {
+      grid-template:
+        "time-t url-t"
+        "doc-t idle-t"
+        "project-t auto-t"
+        "cal-t shift-t"
+        "invoice-t invoice-t"
+        "feature-t feature-t";
+      grid-template-columns: 315px 315px;
+    }
+  
+    #feature-t {
+      margin-left: -450px;
+      margin-top: 35px;
+    }
+    #footer-list {
+      grid-template:
+        "desktime Learn-more Integrations"
+        "features Contacts";
+      grid-template-columns: 240px 240px 240px;
+      grid-template-rows: 330px 330px;
+    }
+    #footer {
+      margin-top: 35px;
+    }
+    #copy {
+      margin-top: 50px;
+      grid-template:
+        "d-logo"
+        "fb-l twitter-l youtube-l linkedin-l google-play app-store";
+      grid-template-columns: 50px 50px 50px 50px 130px 130px;
+      grid-template-rows: 70px 100px;
+      margin-left: 200px;
+    }
+    #copy-2 {
+      grid-template: "copyright dra-group";
+      grid-template-columns: 300px 100px;
+      grid-template-rows: 100px;
+    }
+    #d-logo {
+      grid-column-start: 3;
+      grid-column-end: 6;
+    }
+  }
+  /* Small devices with exact 600px */
+  @media only screen and (max-width: 600px) {
+    #elements > div {
+      margin-left: 40px;
+    }
+    #elements > div > p {
+      margin-left: -100px;
+    }
+    #elements {
+      grid-template:
+        "auto-time screenshots"
+        "url-app-track doc-track"
+        " project-track cost-cal";
+      margin-bottom: 10px;
+      padding-bottom: 60px;
+    }
+    #grid-green {
+      grid-template:
+        "boost"
+        "mini"
+        "organize";
+    }
+    #green-cont {
+      height: 1020px;
+    }
+    #tracking-list {
+      grid-template:
+        "time-t"
+        "url-t"
+        "doc-t"
+        "idle-t"
+        "project-t"
+        "auto-t"
+        "cal-t"
+        "shift-t"
+        "invoice-t"
+        "feature-t";
+      grid-template-rows:
+        280px
+        280px
+        280px
+        280px
+        280px
+        280px
+        280px
+        280px
+        280px;
+    }
+    #feature-t {
+      margin-left: -170px;
+      margin-top: -100px;
+    }
+  }
+  
+  #third_part {
+    width: 70%;
+    /* height: 80%; */
+    /* border: solid red; */
+    margin: auto;
+    margin-top: 350px;
+  }
+  
+  /* #third_part > div:nth-child(2){
+      height: 250px;
+  } */
+  
+  span,
+  .green {
+    color: #5fb92a;
+  }
+  
+  span,
+  .text_bold {
+    font-weight: bold;
+  }
+  
+  .pointer1 {
+    cursor: pointer;
+  }
+  
+  span:hover,
+  .pointer2:hover {
+    color: green;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .flex_class {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .basis_50 {
+    flex-basis: 50%;
+  }
+  /* .basis_20{
+      flex-basis: 20%;
+  } */
+  

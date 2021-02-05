@@ -1,0 +1,515 @@
+
+
+
+
+
+.MenuBarToggle {
+    transform: translate(10%);
+            position: absolute;
+            
+        border-bottom: 1px solid #EAEAEB;
+        text-align: right;
+        height: 70px;
+        width: 80%;
+        line-height: 70px;
+        margin: auto;
+        margin-bottom: 100px;
+       
+    }
+    .menuBar {
+        margin: 0 30px 0 0;
+        border-radius: 5px;
+    }
+    .menuBar a {
+        clear: right;
+        text-decoration: none;
+        color: gray;
+        margin: 0 10px;
+        line-height: 70px;
+        
+    }
+    #SignButton{
+        width: 90px;
+        height: 40px;
+        color: white;
+        border: 1px solid rgb(16, 120, 16); 
+        background-color: #5FB92A;
+        border-radius: 5px;
+    }
+    #LogInButton{
+        width: 90px;
+        height: 40px;
+        
+        border: 1px solid rgb(149, 154, 149); 
+        
+        border-radius: 5px;
+    }
+    
+    #Menulabel {
+        margin: 0 40px 0 0;
+        
+        line-height: 70px;
+        display: none;
+        width: 26px;
+        float: right;
+    }#MenuLine {
+        width: 100%;
+        height: 3px;
+        background-color: #5FB92A;
+    }
+    #toggle {
+        display: none;
+    }.SvgLogo{
+        float: left;
+        margin: 15px;
+    }
+    
+    
+    @media only screen and (max-width: 900px) {
+        #Menulabel {
+            display: block;
+            cursor: pointer;
+        }
+        .menuBar {
+            text-align: center;
+            width: 100%;
+            display: none;
+            
+            
+            
+        }
+        .menuBar a {
+            display: block;
+            border-bottom: 1px solid #EAEAEB;
+            margin: 0;
+            background-color: #5FB92A;
+            visibility: visible;
+            color: white;
+            border: 1px solid #5FB92A;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+            
+        }
+        #toggle:checked + .menuBar {
+            display: block;
+        }
+        #SignButton{
+            width: 100%;
+            height: 40px;
+            color: #5FB92A;
+            border: 1px solid rgba(16, 120, 16, 0); 
+            background-color:white;
+            border-radius: 2px;
+        }
+        #LogInButton{
+            width: 100%;
+            height: 40px;
+            background-color: #5FB92A;
+            border: 1px solid rgb(255, 255, 255); 
+            color: white;
+            border-radius: 2px;
+        }
+        
+    }#MenuEnd{
+        height: 100px;
+        width: 100%;
+    }
+    /* menu end */
+/* signUp Code start */
+
+    #SignUpMain{
+        max-width: 550px;
+        min-width: 200px;
+    height:1000px ;
+    float:auto;
+    margin: auto;
+    color: gray;
+    padding-top: 50px;
+    border: 1px solid black;
+    
+    }
+
+    #SignUpLogo{
+        height: 105px;
+    text-align: center;
+    }
+
+
+    #SignUPHere{
+        width: 72%;
+        height: 450px;
+        border: 0px solid gray;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.122), 0 6px 20px 0 rgba(0, 0, 0, 0.136);
+        text-align: center;
+        margin: auto;
+        border-radius: 2px;
+        padding-top: 1px;
+        color: gray;
+        margin-top: 20px;
+    }#SignUPHere>input{
+        height: 45px;
+        width: 90%;
+        text-align: left;
+        margin: 6px;
+        padding-left: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.395);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.027), 0 6px 20px 0 rgba(0, 0, 0, 0.088);
+       border-radius: 4px;
+    }#SignUPHere>button{
+        height: 45px;
+        width: 68%;
+        text-align: center;
+        margin: 10px;
+        background-color: #5FB92A;
+        color: white;
+        border: 1px solid #5FB92A;
+        border-radius: 5px;
+        font-size: 20px;
+        
+    
+    }#spanGreen{
+        color: #5FB92A ;
+        font-weight: bold;
+    
+    
+    }#SignUpWith{
+        max-width: 400px;
+        height: 130px;
+        text-align: center;
+        margin: auto;
+        float: auto;
+        border: 0px solid black;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.061), 0 6px 20px 0 rgba(0, 0, 0, 0.088);
+        margin-top: 20px;
+        padding-top: 10px;
+        color: gray;
+        
+    
+    }
+
+
+    #SignUpWith>div>div{
+        width: 85px;
+        height: 40px;
+        text-align: center;
+        color: gray;
+        
+    
+    
+        float: left;
+       
+        margin: 5px;
+        border-radius: 5px;
+    
+    }#SignUpWith>div>div:nth-child(1){
+        margin-left: 17px;
+        background-image: url(https://desktime.com/assets/img/icons/facebook_v2.svg);
+    
+    }
+    #SignUpWith>div>div:nth-child(2){
+        background-image: url(https://desktime.com/assets/img/icons/twitter_v2.svg);
+    
+    }
+    #SignUpWith>div>div:nth-child(3){
+        background-image: url(https://desktime.com/assets/img/icons/linkedin_v2.svg);
+    }
+    #SignUpWith>div>div:nth-child(4){
+        background-image: url(https://desktime.com/assets/img/icons/google_v2.svg);
+    }
+    #lastLogin{
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+    #rushiGrey{
+        color: silver;
+    }
+    
+    #rushifont5{
+        font-size: 5px;
+    }
+    #rushifont13{
+        font-size: 13px;
+    }
+    #rushifont15{
+        font-size: 15px;
+    }
+    #rushifont20{
+        font-size: 20px;
+    }
+    #rushifont25{
+        font-size: 25px;
+    }
+    #rushifont30{
+        font-size: 30px;
+    }
+    #rushifont40{
+        font-size: 40px;
+    }
+    #rushifont50{
+        font-size: 50px;
+    }
+
+    #rushifont60{
+        font-size: 60px;
+    }
+
+
+
+    /* Footer code start */
+
+    #footer {
+        width: 100%;
+        margin: auto;
+        margin-top: 35px;
+      }
+      #footer-list {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 240px 240px 240px 240px 240px;
+        grid-template-rows: 500px;
+        margin: auto;
+        gap: 0.5%;
+      }
+      #footer-list > div > ul > li {
+        list-style: none;
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: rgb(86, 83, 83);
+      }
+      #footer-list > div > ul > li:hover {
+        color: #5fb92a;
+        cursor: pointer;
+      }
+      #footer-list > div > ul > li:nth-child(1) {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(37, 37, 37);
+      }
+      #copy {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 200px 500px 50px 50px 50px 50px 130px 130px;
+        grid-template-rows: 100px;
+        gap: 0.3%;
+        margin: auto;
+        margin-top: -145px;
+      }
+      #d-logo {
+        margin-left: 40px;
+        cursor: pointer;
+      }
+      #fb-l > a > img,
+      #twitter-l > a > img,
+      #linkedin-l > a > img {
+        width: 30px;
+      }
+      #youtube-l > a > img {
+        width: 70px;
+        margin-left: -20px;
+      }
+      #google-play > a > img,
+      #app-store > a > img {
+        width: 120px;
+        margin-left: 10px;
+      }
+      #google-play > a > img {
+        margin-top: -40px;
+      }
+      #copy-2 {
+        width: 100%;
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 435px 730px 20px;
+        grid-template-rows: 70px;
+        margin: auto;
+      }
+      #copyright > p {
+        font-size: 20px;
+        text-align: right;
+        color: darkgray;
+      }
+      #dra-group > img {
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      /* Large devices exact width :900px) */
+      @media only screen and (max-width: 900px) {
+       /* signup  */
+        #SignUPHere{
+
+            margin-top: 100px;
+        }
+
+        /* signUp */
+        #elements {
+          grid-template:
+            "auto-time screenshots url-app-track "
+            "doc-track project-track cost-cal";
+          margin-bottom: 10px;
+          padding-bottom: 60px;
+        }
+        #elements > div {
+          margin-left: 40px;
+        }
+        #elements > div > p {
+          margin-left: -110px;
+        }
+        #grid-green {
+          grid-template:
+            "boost"
+            "mini"
+            "organize";
+        }
+        #green-cont {
+          height: 1020px;
+        }
+        #tracking-list {
+          grid-template:
+            "time-t url-t"
+            "doc-t idle-t"
+            "project-t auto-t"
+            "cal-t shift-t"
+            "invoice-t invoice-t"
+            "feature-t feature-t";
+          grid-template-columns: 315px 315px;
+        }
+      
+        #feature-t {
+          margin-left: -450px;
+          margin-top: 35px;
+        }
+        #footer-list {
+          grid-template:
+            "desktime Learn-more Integrations"
+            "features Contacts";
+          grid-template-columns: 240px 240px 240px;
+          grid-template-rows: 330px 330px;
+        }
+        #footer {
+          margin-top: 35px;
+        }
+        #copy {
+          margin-top: 50px;
+          grid-template:
+            "d-logo"
+            "fb-l twitter-l youtube-l linkedin-l google-play app-store";
+          grid-template-columns: 50px 50px 50px 50px 130px 130px;
+          grid-template-rows: 70px 100px;
+          margin-left: 200px;
+        }
+        #copy-2 {
+          grid-template: "copyright dra-group";
+          grid-template-columns: 300px 100px;
+          grid-template-rows: 100px;
+        }
+        #d-logo {
+          grid-column-start: 3;
+          grid-column-end: 6;
+        }
+      }
+      /* Small devices with exact 600px */
+      @media only screen and (max-width: 600px) {
+        #elements > div {
+          margin-left: 40px;
+        }
+        #elements > div > p {
+          margin-left: -100px;
+        }
+        #elements {
+          grid-template:
+            "auto-time screenshots"
+            "url-app-track doc-track"
+            " project-track cost-cal";
+          margin-bottom: 10px;
+          padding-bottom: 60px;
+        }
+        #grid-green {
+          grid-template:
+            "boost"
+            "mini"
+            "organize";
+        }
+        #green-cont {
+          height: 1020px;
+        }
+        #tracking-list {
+          grid-template:
+            "time-t"
+            "url-t"
+            "doc-t"
+            "idle-t"
+            "project-t"
+            "auto-t"
+            "cal-t"
+            "shift-t"
+            "invoice-t"
+            "feature-t";
+          grid-template-rows:
+            280px
+            280px
+            280px
+            280px
+            280px
+            280px
+            280px
+            280px
+            280px;
+        }
+        #feature-t {
+          margin-left: -170px;
+          margin-top: -100px;
+        }
+      }
+      
+      #third_part {
+        width: 70%;
+        /* height: 80%; */
+        /* border: solid red; */
+        margin: auto;
+        margin-top: 350px;
+      }
+      
+      /* #third_part > div:nth-child(2){
+          height: 250px;
+      } */
+      
+      span,
+      .green {
+        color: #5fb92a;
+      }
+      
+      span,
+      .text_bold {
+        font-weight: bold;
+      }
+      
+      .pointer1 {
+        cursor: pointer;
+      }
+      
+      span:hover,
+      .pointer2:hover {
+        color: green;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      
+      .flex_class {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .basis_50 {
+        flex-basis: 50%;
+      }
+      /* .basis_20{
+          flex-basis: 20%;
+      } */
+      
+      p {
