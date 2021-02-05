@@ -232,7 +232,17 @@ body{
     border: solid white 1px;
 }
 
+span{
+    color: white;
+}
 
+span:hover{
+  /* color: green; */
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
 
 @media only screen and (max-width: 1200px) {
     /* .blog_grid1{
@@ -312,6 +322,7 @@ body{
     }
     #subscription{
         max-width: 80%;
+        color: white;
     }
 
     #description_sub{
@@ -322,9 +333,15 @@ body{
         margin-top: 15%;
     }
     #sub_button{
-        border: solid red;
+        /* border: solid red; */
         /* margin-top: 10%; */
-        margin-top: 10%;
+        /* margin-top: 10%; */
+        font-size: 20px;
+
+    }
+    #rev7{
+        margin-top: 20%;
+    }
 
 }
 @media (max-width: 600px) {
@@ -333,7 +350,6 @@ body{
         grid-template: "big_image big_image"
                         "blog_des  blog_des";
 
-        /* font-size: 0em; */
     }
     .f13_rev{
         grid-template: "rev1"
