@@ -90,6 +90,16 @@
     /* border: solid pink; */
 }
 
+.review_cont{
+    /* height: 100%; */
+    /* border: solid pink; */
+    max-width: 90%;
+}
+
+.review_cont > div > div:nth-child(1){
+    border: solid black;
+    max-height: 200px;
+}
 
 .review_cont > div > div:nth-child(1){
     /* height: 100%; */
@@ -98,8 +108,9 @@
 }
 
 .rev_img{
-    height: auto;
+    height: 100%;
     width: 100%;
+    border: solid yellow;
 }
 
 .f13_rev{
@@ -167,14 +178,20 @@
 
 .block1{
     grid-template: "description subscription";
-    padding: 2% 2%;
+    padding: 1% 1%;
 }
 
 #description_sub > h3{
     /* grid-area: description; */
-    font-size: 30px;
-    /* max-width: 10%; */
-    border: solid yellow;
+    font-size: 25px;
+    max-width: 70%;
+    /* border: solid yellow; */
+    margin-left: 10%;
+}
+
+.EamilBox{
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 .immediate_below{
@@ -212,20 +229,76 @@ body{
 }
 
 
-@media only screen and (min-width: 992px) {
-    .blog_grid1{
-        grid-template: "big_image blog_des"
-                        "big_image  blog_des";
+
+
+@media only screen and (max-width: 1200px) {
+    /* .blog_grid1{
+        grid-template: "big_image"
+                        "blog_des";
 
         /* font-size: 0em; */
+
+        #big_image{
+            background: whitesmoke;
+            /* border: solid lime; */
+            
+        }
+        #main_img{
+            padding: 20% 5%;
+            padding-right: unset;
+        }
+     
+}
+
+@media only screen and (max-width: 990px) {
+    .blog_grid1{
+        grid-template: "big_image big_image"
+                        "blog_des  blog_des";
+
+        /* font-size: 0em; */
+    }
+    
+
+    #main_img{
+        max-width: 80%;
+        height: auto;
+    }
+
+    .f13_rev{
+        grid-template: "rev1 rev2 rev3";
     }
 
     .blog_image{
         height: 100%;
         width: 100%;
     }
+
+    .review_cont > div > div:nth-child(1){
+        /* height: 100%; */
+        /* border: solid black; */
+        /* border: solid pink; */
+        /* height: 300px; */
+    }
+    .f13_rev{
+        grid-template: "rev1"
+                        "rev2"
+                        "rev3";
+    }
+
+    .f46_rev{
+        grid-template: "rev4"
+                        "rev5"
+                        "rev6";
+
+    }
+    .f79_rev{
+        grid-template: "rev7"
+                        "rev8"
+                        "rev9";
+    }
+
 }
-@media (max-width: 990px) {
+@media (max-width: 600px) {
 
     .blog_grid1{
         grid-template: "big_image big_image"
@@ -233,6 +306,12 @@ body{
 
         /* font-size: 0em; */
     }
+    .f13_rev{
+        grid-template: "rev1"
+                        "rev2"
+                        "rev3";
+    }
+
 
 }
 
