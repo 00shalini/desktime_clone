@@ -93,6 +93,9 @@
     background-color: white;
     border-radius: 2px;
   }
+  #footer{
+    margin-top: 750px;
+  }
   #LogInButton {
     width: 100%;
     height: 40px;
@@ -133,7 +136,7 @@
   border-radius: 2px;
   padding-top: 1px;
   color: gray;
-  margin-top: 20px;
+  margin-top: 20%;
 }
 #SignUPHere > input {
   height: 45px;
@@ -204,8 +207,14 @@
   font-size: 15px;
 }
 
-#rushiGrey {
-  color: silver;
+
+@media (max-width: 600px) {
+  #footer{
+    margin-top: unset;
+    border: solid red;
+  }
+/* #rushiGrey {
+  color: silver; */
 }
 
 #rushifont5 {
@@ -216,6 +225,7 @@
 }
 #rushifont15 {
   font-size: 15px;
+  margin-left: unset;
 }
 #rushifont20 {
   font-size: 20px;

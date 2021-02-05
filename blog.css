@@ -381,4 +381,7 @@ span{
   #fix_pos{
     visibility: hidden;
   }
+  #block1 {
+    margin-top: 30%;
+  }
 }
