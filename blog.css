@@ -19,9 +19,7 @@
     /* border: solid red; */
 }
 
-#padding2{
-    /* padding: 2% 2%; */
-}
+
 
 .little_below{
     margin-top: 0em;
@@ -85,10 +83,7 @@
     font-size: 20px;
 } */
 
-.review_cont > div > div{
-    /* height: 100%; */
-    /* border: solid pink; */
-}
+
 
 .review_cont{
     /* height: 100%; */
@@ -294,12 +289,7 @@ span:hover{
         width: 100%;
     }
 
-    .review_cont > div > div:nth-child(1){
-        /* height: 100%; */
-        /* border: solid black; */
-        /* border: solid pink; */
-        /* height: 300px; */
-    }
+    
     .f13_rev{
         grid-template: "rev1"
                         "rev2"

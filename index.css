@@ -361,6 +361,9 @@ form {
   #green-cont {
     height: 1020px;
   }
+  #index_part2 {
+    margin-top: -20px;
+  }
   #tracking-list {
     grid-template:
       "time-t"
