@@ -6,7 +6,7 @@
   width: 100%;
   height: 190px;
   margin: auto;
-  margin-top: 250px;
+  margin-top: 600px;
 }
 #elements {
   display: grid;
@@ -301,7 +301,9 @@ form {
     grid-template-rows: 330px 330px;
     margin-top: 150px;
   }
-
+  #index_part2 {
+    margin-top: 1000px;
+  }
   #footer {
     margin-top: 30px;
   }
@@ -325,7 +327,7 @@ form {
     grid-column-end: 6;
   }
   #trial-form {
-    margin-top: 650px;
+    margin-top: 450px;
   }
   #trial {
     display: grid;
@@ -365,7 +367,7 @@ form {
     height: 1020px;
   }
   #index_part2 {
-    margin-top: -20px;
+    margin-top: 1000px;
   }
   #tracking-list {
     grid-template:
@@ -780,7 +782,9 @@ h2 {
   letter-spacing: 0.5px;
   color: white;
 }
-
+#tagline {
+  font-size: 40px;
+}
 h1 {
   font-size: 76px;
   font-family: "Big Shoulders Display", sans-serif;
@@ -963,22 +967,7 @@ body {
   font-size: 15px;
 }
 
-@media (max-width: 600px) {
-  .MenuBarh1 {
-    padding-bottom: 10px;
-    float: left;
-    color: rgba(255, 0, 0, 0);
-  }
-  #layout {
-    /* background-color: cyan; */
-    grid-template:
-      "MenuBar"
-      "Leftbox"
-      "VideoLayout";
-  }
-}
-
-@media (max-width: 990px) {
+@media (max-width: 900px) {
   .MenuBarh1 {
     padding-bottom: 10px;
     float: left;
@@ -1011,19 +1000,20 @@ body {
     font-size: 15px;
   }
   #Leftbox {
-    margin-left: 1%;
+    margin-left: 50px;
     text-align: center;
   }
   #VideoLayout {
-    margin-right: 0%;
+    margin-left: 5%;
+    padding-left: 20px;
   }
   .FreeTrail {
     /* border: 1px solid green;
-      background-color: #5fb92a;
-      color: whitesmoke; */
+        background-color: #5fb92a;
+        color: whitesmoke; */
     width: 80%;
     /* height: 50px;
-      border-radius: 5px; */
+        border-radius: 5px; */
     font-size: 30px;
   }
 
@@ -1034,14 +1024,38 @@ body {
       "VideoLayout";
   }
 }
+#Leftbox {
+  margin-left: 180px;
+}
+@media (max-width: 600px) {
+  .MenuBarh1 {
+    padding-bottom: 10px;
+    float: left;
+    color: rgba(255, 0, 0, 0);
+  }
+  #Leftbox {
+    margin-left: 10px;
+    text-align: center;
+  }
+  #VideoLayout {
+    padding-left: -10px;
+  }
+  #layout {
+    /* background-color: cyan; */
+    grid-template:
+      "MenuBar"
+      "Leftbox"
+      "VideoLayout";
+  }
+}
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   #layout {
     grid-template:
       "MenuBar MenuBar"
       "Leftbox VideoLayout";
   }
-}
+} */
 /* faq style stars */
 /* #faq-container{
             text-align: center;
@@ -1083,7 +1097,7 @@ p5 {
 
 .faq-container {
   background-color: #f3f4f5;
-  height: auto;
+  height: 1800px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
