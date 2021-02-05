@@ -208,4 +208,5 @@
 #loginFont {
   font-size: 15px;
   color: gray;
+  margin-left: unset;
 }
