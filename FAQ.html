@@ -10,8 +10,8 @@
         #faq-container{
             text-align: center;
             margin-top: 30px;
-            height: 250px;
-            border: 1px solid red;
+            height: 300px;
+            /* border: 1px solid red; */
         }
         p4{
             color: #404751;
@@ -48,19 +48,22 @@
         }
 
         .faq-container{
-            background-color: rgb(161, 69, 69);
+            background-color: #f3f4f5;
             height: auto;
             justify-content: center;
             display: flex;
             flex-wrap: wrap;
             /* margin-top: 20px; */
+            /* margin: 10px; */
         }
         .faq-box{
             width: 600px;
-            height: 270px;
+            height: 300px;
             background-color: white;
             margin: 30px 20px;
             border-radius: 5px;
+           
+           
         }
 
         #faq-cont-1{
@@ -68,8 +71,9 @@
             width: 1100px;
             margin-top: 30px;
             justify-content: center;
-            height: 320px;
-            border: 1px solid black;
+            height: auto;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
         }
 
         #faq-cont-2{
@@ -78,7 +82,8 @@
             
             /* justify-content: center; */
             height: 320px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
         }
 
         #faq-cont-3{
@@ -87,7 +92,8 @@
             
             /* justify-content: center; */
             height: 320px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
         }
 
         #faq-cont-4{
@@ -96,7 +102,8 @@
             
             /* justify-content: center; */
             height: 320px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
         }
 
 
@@ -106,7 +113,8 @@
             
             /* justify-content: center; */
             height: 320px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            margin-bottom: 20px;
         }
 
 
@@ -117,9 +125,9 @@
             
         }
         .list-green{
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             color: #5fb92a;
-            font-size: 25px;
+            font-size: 24px;
             list-style: none;
             
            
@@ -134,7 +142,7 @@
 
         .list-green > li:before{
             content: "\2713";
-            padding-bottom: 15px;
+            /* padding-bottom: 15px; */
           
             }
 
@@ -146,7 +154,72 @@
            margin-left: 45px;
            font-size: 18px;
            border: 1px solid  #5fb92a;
+           cursor: pointer;
+           padding-bottom: 5px;
+           
         }
+
+
+@media only screen and (max-width: 600px){
+    #search-container {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #faq-container{
+        height: auto;
+    }
+
+    .search-bar, .search-button {
+        margin: 5px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 630px){
+
+    #faq-container{
+        height: auto;
+    }
+
+    #faq-cont-1 , #faq-cont-2,  #faq-cont-3,  #faq-cont-4,  #faq-cont-5{
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+    }
+    .faq-box{
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 630px) and (max-width: 900px){
+
+    #faq-container{
+        height: auto;
+        width: 100%;
+    }
+
+    #faq-cont-1 , #faq-cont-2,  #faq-cont-3,  #faq-cont-4,  #faq-cont-5{
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+    .faq-box{
+        height: auto;
+      width: 100%;
+      /* overflow: hidden; */
+      justify-content: center;
+    }
+
+    #faq-box-button{
+        padding-bottom: 5px;
+    }
+}
             
      
     </style>
@@ -377,6 +450,19 @@
 
 
     
+
+</div>
+
+
+<div id="trail-box">
+    
+
+    <div id="trial-text">
+
+    </div>
+
+
+    <div id=""></div>
 
 </div>
 
