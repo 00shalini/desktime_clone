@@ -119,7 +119,7 @@ p {
 #footer {
   width: 100%;
   margin: auto;
-  margin-top: 350px;
+  margin-top: 300px;
 }
 #footer-list {
   width: 85%;
@@ -203,7 +203,7 @@ p {
   width: 101.2%;
   background-color: #5fb92a;
   height: 300px;
-  margin-top: 350px;
+  margin-top: 180px;
   margin-left: -10px;
   padding-top: 20px;
 }
@@ -299,7 +299,11 @@ form {
       "features Contacts";
     grid-template-columns: 240px 240px 240px;
     grid-template-rows: 330px 330px;
-    margin-top: -100px;
+    margin-top: 150px;
+  }
+
+  #footer {
+    margin-top: 30px;
   }
 
   #copy {
@@ -321,7 +325,7 @@ form {
     grid-column-end: 6;
   }
   #trial-form {
-    margin-top: 800px;
+    margin-top: 650px;
   }
   #trial {
     display: grid;
@@ -1039,12 +1043,12 @@ body {
   }
 }
 /* faq style stars */
-#faq-container {
-  text-align: center;
-  margin-top: 30px;
-  height: 250px;
-  border: 1px solid red;
-}
+/* #faq-container{
+            text-align: center;
+            margin-top: 30px;
+            height: 300px;
+            /* border: 1px solid red; */
+
 p4 {
   color: #404751;
   font-size: 48px;
@@ -1078,16 +1082,17 @@ p5 {
 }
 
 .faq-container {
-  background-color: rgb(161, 69, 69);
+  background-color: #f3f4f5;
   height: auto;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   /* margin-top: 20px; */
+  /* margin: 10px; */
 }
 .faq-box {
   width: 600px;
-  height: 270px;
+  height: 300px;
   background-color: white;
   margin: 30px 20px;
   border-radius: 5px;
@@ -1098,8 +1103,9 @@ p5 {
   width: 1100px;
   margin-top: 30px;
   justify-content: center;
-  height: 320px;
-  border: 1px solid black;
+  height: auto;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
 }
 
 #faq-cont-2 {
@@ -1108,7 +1114,8 @@ p5 {
 
   /* justify-content: center; */
   height: 320px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
 }
 
 #faq-cont-3 {
@@ -1117,7 +1124,8 @@ p5 {
 
   /* justify-content: center; */
   height: 320px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
 }
 
 #faq-cont-4 {
@@ -1126,7 +1134,8 @@ p5 {
 
   /* justify-content: center; */
   height: 320px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
 }
 
 #faq-cont-5 {
@@ -1135,7 +1144,8 @@ p5 {
 
   /* justify-content: center; */
   height: 320px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -1144,9 +1154,9 @@ h4 {
   margin-left: 50px;
 }
 .list-green {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: #5fb92a;
-  font-size: 25px;
+  font-size: 24px;
   list-style: none;
 }
 
@@ -1157,9 +1167,16 @@ h4 {
 
 .list-green > li:before {
   content: "\2713";
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
-
+#faq-container > h4,
+h5 {
+  text-align: center;
+}
+#faq-container > h4 {
+  font-size: 45px;
+  margin-bottom: -50px;
+}
 #faq-box-button {
   width: 120px;
   height: 40px;
@@ -1168,4 +1185,73 @@ h4 {
   margin-left: 45px;
   font-size: 18px;
   border: 1px solid #5fb92a;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #search-container {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #faq-container {
+    height: auto;
+  }
+
+  .search-bar,
+  .search-button {
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #faq-container {
+    height: auto;
+  }
+
+  #faq-cont-1,
+  #faq-cont-2,
+  #faq-cont-3,
+  #faq-cont-4,
+  #faq-cont-5 {
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+  }
+  .faq-box {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 1200px) {
+  #faq-container {
+    height: auto;
+    width: 100%;
+  }
+
+  #faq-cont-1,
+  #faq-cont-2,
+  #faq-cont-3,
+  #faq-cont-4,
+  #faq-cont-5 {
+    flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .faq-box {
+    height: auto;
+    width: 100%;
+    /* overflow: hidden; */
+    justify-content: center;
+  }
+
+  #faq-box-button {
+    padding-bottom: 5px;
+  }
 }
