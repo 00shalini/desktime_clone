@@ -5,44 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">  
-        <title>Blogs</title>
+        <title>Productivity tips, news and insights | DeskTime Blog</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" type="text/css" href="MenuBar.css">
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
 
 
     <body>
+            <div id = "MenuLine"></div>
+            <div class="MenuBarToggle">
+                <a href="index.html">
+                <img class = "SvgLogo" src = "https://desktime.com/assets/img/logo/default.svg"></a>
+                <label id = "Menulabel" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div class="menuBar">
+                    <a href="#">Demo</a>
+                    <a href="#">Features</a>
+                    <a href="#">About us</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="login.html"><button id = "LogInButton" class="pointer1">LOGIN</button></a>
+                    <a href="signUP.html"><span><button id = "SignButton" class="pointer1">SIGN UP</button></span></a>
+                </div>
+            </div>
 
-        <div id = "MenuBar" class="blog_width grid_class blog_grid1">
-            <div>
-                <img src = "https://desktime.com/assets/img/logo/default.svg">
-                
-            </div>
-            <div class = "menu">
-                
-                <button>SIGN UP</button>
-                <button>LOGIN</button>
-                
-                
-                <button  onclick="location.href = 'blog.html';">Blog</button>
-                
-                <button  onclick="location.href = 'FAQ.html';">FAQ</button>
-                <button>About us</button>
-                <button>Pricing</button>
-                <button>Features</button>
-                <button>Demo</button>
-                
-            </div>
-        </div>
+        <div id = "MenuEnd"></div>
         
+
+        <div id="fix_pos">
+            <img class="pointer1" src = "https://seeklogo.com/images/F/facebook-logo-C9DDA9B496-seeklogo.com.png">
+            <br>
+            <img class="pointer1" src  = "https://thesustainableangle.org/wp-content/uploads/2015/01/Stunning-Instagram-Logo-Vector-Free-Download-43-For-New-Logo-with-Instagram-Logo-Vector-Free-Download-1-1024x1024.png">
+            <br>
+            <img class="pointer1" src  = "https://seeklogo.com/images/T/twitter-2012-positive-logo-916EDF1309-seeklogo.com.png">
+            <br>
+            <img class="pointer1" src  = "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-512.png">
+        </div>
+
+
         <div>
             <div class="center_align">
                 <h2 class="color_black">DeskTime blog</h2>
                 <p>The hottest topics on workplace productivity. Don’t miss the latest trends, case studies, and news.</p>
-                <input type="text" placeholder="Search in the blog....">
-                <button>Search</button>
+                <input type="text" placeholder="Search in the blog...." id="search_top">
+                <button id="search_button" class="pointer1">Search</button>
             </div>
 
             <div class="center_align">
@@ -71,11 +80,11 @@
                         <img  src="https://desktime.com/blog/wp-content/uploads/2017/10/%5E20FCE26528AFA4A3875218F32289D63E307CB115A9663534BD%5Epimgpsh_fullsize_distr.jpg" alt="">
                     </div>
                     <div class="see_border grow_1 little_left_margin">
-                        <div>Liva Shipola</div>
+                        <div class="pointer3">Liva Shipola</div>
                         <div>January 28, 2021</div>
                     </div>
                     <div class="see_border">
-                        <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                        <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                     </div>
                     
                 </div>
@@ -103,11 +112,11 @@
                         <img src="https://secure.gravatar.com/avatar/17a01547506e289b02ed7f689b82b628?s=40&d=mm&r=g" alt="">
                     </div>
                     <div class="see_border grow_1 little_left_margin">
-                        <div>Viesturs Abelis</div>
+                        <div class="pointer3">Viesturs Abelis</div>
                         <div>January 19, 2021</div>
                     </div>
                     <div class="see_border">
-                        <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                        <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                     </div>
                     
                 </div>
@@ -129,11 +138,11 @@
                             <img src="https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g" alt="">
                         </div>
                         <div class="see_border grow_1 little_left_margin">
-                            <div>Krista Krumina</div>
+                            <div class="pointer3">Krista Krumina</div>
                             <div>January 13, 2021</div>
                         </div>
                         <div class="see_border">
-                            <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                            <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                         </div>
                         
                     </div>
@@ -155,11 +164,11 @@
                             <img src="https://desktime.com/blog/wp-content/uploads/2017/10/%5E20FCE26528AFA4A3875218F32289D63E307CB115A9663534BD%5Epimgpsh_fullsize_distr.jpg" alt="">
                         </div>
                         <div class="see_border grow_1 little_left_margin">
-                            <div>Liva Shipola</div>
+                            <div class="pointer3">Liva Shipola</div>
                             <div>January 6, 2021</div>
                         </div>
                         <div class="see_border">
-                            <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                            <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                         </div>
                         
                     </div>
@@ -180,7 +189,7 @@
     
             <div id="subscription" class="see_border">
                 <input class= "EamilBox little_left_margin white_border" type= "email" placeholder="Your Email" style="width: 50%;">
-                <button id="sub_button" class="FreeTrail white_border" style="width: 30%;">Subscribe</button>
+                <button id="sub_button" class="FreeTrail white_border pointer1" style="width: 30%;">Subscribe</button>
                 <p class="little_left_margin little_below small_size" style="text-align: left; color: white;">By subscribing you agree to our <span>privacy policy</span></p>
             </div>
     
@@ -206,11 +215,11 @@
                         <img src="https://desktime.com/blog/wp-content/uploads/2017/10/%5E20FCE26528AFA4A3875218F32289D63E307CB115A9663534BD%5Epimgpsh_fullsize_distr.jpg" alt="">
                     </div>
                     <div class="see_border grow_1 little_left_margin">
-                        <div>Liva Shipola</div>
+                        <div class="pointer3">Liva Shipola</div>
                         <div>December 28, 2020</div>
                     </div>
                     <div class="see_border">
-                        <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                        <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                     </div>
                     
                 </div>
@@ -235,11 +244,11 @@
                             <img src="https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g" alt="">
                         </div>
                         <div class="see_border grow_1 little_left_margin">
-                            <div>Liva Shipola</div>
+                            <div class="pointer3">Liva Shipola</div>
                             <div>December 18, 2020</div>
                         </div>
                         <div class="see_border">
-                            <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                            <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                         </div>
                         
                     </div>
@@ -263,11 +272,11 @@
                             <img src="https://desktime.com/blog/wp-content/uploads/2017/10/%5E20FCE26528AFA4A3875218F32289D63E307CB115A9663534BD%5Epimgpsh_fullsize_distr.jpg" alt="">
                         </div>
                         <div class="see_border grow_1 little_left_margin">
-                            <div>Liva Shipola</div>
+                            <div class="pointer3">Liva Shipola</div>
                             <div>December 7, 2020</div>
                         </div>
                         <div class="see_border">
-                            <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                            <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                         </div>
                         
                     </div>
@@ -298,11 +307,11 @@
                         <img src="https://secure.gravatar.com/avatar/0d52bb462f2b62bf3a375169f2dd16e7?s=40&d=mm&r=g" alt="">
                     </div>
                     <div class="see_border grow_1 little_left_margin">
-                        <div>Julia Gifford</div>
+                        <div class="pointer3">Julia Gifford</div>
                         <div>November 30, 2020</div>
                     </div>
                     <div class="see_border">
-                        <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                        <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                     </div>
                     
                 </div>
@@ -327,11 +336,11 @@
                             <img src="https://secure.gravatar.com/avatar/229e885a23fab4329b6cf6a376c141ee?s=40&d=mm&r=g" alt="">
                         </div>
                         <div class="see_border grow_1 little_left_margin">
-                            <div>Krista Krumina</div>
+                            <div class="pointer3">Krista Krumina</div>
                             <div>November 25, 2020</div>
                         </div>
                         <div class="see_border">
-                            <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                            <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                         </div>
                         
                     </div>
@@ -355,12 +364,12 @@
                             <img src="https://secure.gravatar.com/avatar/0d52bb462f2b62bf3a375169f2dd16e7?s=40&d=mm&r=g" alt="">
                         </div>
                         <div class="see_border grow_1 little_left_margin">
-                            <div>Julia Gifford</div>
+                            <div class="pointer3">Julia Gifford</div>
                             <div>November 3, 2020
                             </div>
                         </div>
                         <div class="see_border">
-                            <img src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
+                            <img class="pointer1" src="https://cdn0.iconfinder.com/data/icons/smileys-people-hand-gestures-add-on-vol-2/48/v-19-512.png" alt="">
                         </div>
                         
                     </div>

@@ -1,7 +1,33 @@
-.see_border {
+/* .see_border {
   margin: 2px 3px;
+} */
+
+
+
+.pointer3:hover {
+  /* color: green !important; */
+  cursor: pointer;
+  text-decoration: underline;
 }
 
+
+#fix_pos{
+  /* border: solid red; */
+  width: 3%;
+  position: fixed;
+  margin-top: 10%;
+  /* background: red; */
+}
+
+#fix_pos > img{
+  width: 100%;
+  height: auto;
+  /* border: solid pink; */
+  margin-top: 5px;
+  padding: 1px;
+  border-radius: 5px;
+  
+}
 .blog_width {
   width: 70%;
   /* height: 80%; */
@@ -86,7 +112,7 @@
 }
 
 .review_cont > div > div:nth-child(1) {
-  border: solid black;
+  /* border: solid black; */
   max-height: 200px;
 }
 
@@ -99,7 +125,7 @@
 .rev_img {
   height: 100%;
   width: 100%;
-  border: solid yellow;
+  /* border: solid yellow; */
 }
 
 .f13_rev {
@@ -216,6 +242,26 @@ body {
   border: solid white 1px;
 }
 
+span{
+  color: unset;
+}
+
+
+#search_top{
+  height: 30px;
+  width: 20%;
+  border-radius: 5px;
+  /* background: red; */
+}
+
+#search_button{
+  height: 36px;
+  background: #5fb92a;
+  width: 10%;
+  color: white;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 1200px) {
   /* .blog_grid1{
         grid-template: "big_image"
@@ -299,11 +345,21 @@ body {
     margin-top: 15%;
   }
   #sub_button {
-    border: solid red;
+    /* border: solid red; */
     /* margin-top: 10%; */
     margin-top: 10%;
+    font-size: unset;
+  }
+
+  
+  .EamilBox {
+    height: 45px;
+    background-color: unset;
   }
 }
+
+
+
 @media (max-width: 600px) {
   .blog_grid1 {
     grid-template:
@@ -317,5 +373,15 @@ body {
       "rev1"
       "rev2"
       "rev3";
+  }
+  #sub_button {
+    width: 80%;
+    font-size: unset;
+  }
+  #fix_pos{
+    visibility: hidden;
+  }
+  #block1 {
+    margin-top: 30%;
   }
 }
