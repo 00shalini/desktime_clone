@@ -18,7 +18,7 @@ Wardha group Samurai_2 batch from Masai School.
 
 ###Team Members are :
 ##### Shalini Sharma
-##### Yogesh Siwan
+##### Yogesh Kumar
 ##### Suman Chakraborty
 ##### Rushikesh Umratkar
 
