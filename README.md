@@ -5,7 +5,7 @@ Desktime.com
 desktime_clone
 
 ### Introduction:
-Our team project is about developing the clone of the "Desktime.com". DeskTime is a time tracking software solution that also analyzes productivity. The only fully automatic time tracker app.
+Our team project is about developing the clone of the "Desktime.com". DeskTime is a time tracking software solution that also analyzes productivity. This is one of the best automatic time tracker app.
 
 ### Technology used :
 Only HTML, CSS, Javascript are used to accomplish the project. Little bit of DOM is also used to make it interactive.
